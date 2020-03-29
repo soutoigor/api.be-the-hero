@@ -11,11 +11,10 @@ routes.delete('/sessions', SessionController.delete)
 routes.post('/ongs', OngController.create)
 routes.get('/ongs', OngController.index)
 
-routes.get('/profile/:id', ProfileController.index)
+routes.get('/profile', ProfileController.index)
 
 routes.post('/incidents', IncidentController.create)
 routes.get('/incidents', IncidentController.index)
-routes.get('/incidents/:id', ProfileController.index)
 routes.delete('/incidents/:id', IncidentController.delete)
 
 module.exports = routes
